@@ -1,0 +1,10 @@
+@'
+.venv/
+__pycache__/
+*.pyc
+.env
+data/
+scratch_test.py
+*.egg-info/
+.pytest_cache/
+'@ | Set-Content .gitignore -Encoding ascii

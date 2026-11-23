@@ -1,0 +1,20 @@
+{
+  "repo": "iammikek__fastAPI-101",
+  "questions": [
+    {"q": "How is a login password checked against the stored hash?", "file": "app/security.py", "evidence": "def verify_password"},
+    {"q": "Which service method looks up a user by email address?", "file": "app/services.py", "evidence": "def get_by_email"},
+    {"q": "What response does a client get when it sends too many requests?", "file": "app/main.py", "evidence": "def rate_limit_handler"},
+    {"q": "What runs when the application starts up and shuts down?", "file": "app/main.py", "evidence": "def lifespan"},
+    {"q": "Where is the logging format and level set up?", "file": "app/main.py", "evidence": "def configure_logging"},
+    {"q": "Which endpoint deletes a category?", "file": "app/routers/categories.py", "evidence": "def delete_category"},
+    {"q": "Which endpoint changes only some fields of an item?", "file": "app/routers/items.py", "evidence": "def update_item"},
+    {"q": "Where is the endpoint that tells you the service is running?", "file": "app/routers/health.py", "evidence": "def health"},
+    {"q": "Which endpoint returns the profile of the logged-in user?", "file": "app/routers/auth.py", "evidence": "def read_current_user"},
+    {"q": "How is the item table defined with its price and category?", "file": "app/models.py", "evidence": "class Item"},
+    {"q": "Which schema describes the filters accepted when listing items?", "file": "app/schemas.py", "evidence": "class ItemListFilters"},
+    {"q": "Which error is raised when someone registers with an email that is already used?", "file": "app/exceptions.py", "evidence": "class UserEmailExistsError"},
+    {"q": "How are database migrations run when connected to the database?", "file": "alembic/env.py", "evidence": "def run_migrations_online"},
+    {"q": "Which migration adds the users table?", "file": "alembic/versions/003_add_users_table.py", "evidence": "def upgrade"},
+    {"q": "How do the tests get an authorization header for a logged-in user?", "file": "tests/conftest.py", "evidence": "def auth_headers"}
+  ]
+}

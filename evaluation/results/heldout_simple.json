@@ -1,0 +1,194 @@
+{
+  "summary": {
+    "chunker": "simple",
+    "k": 5,
+    "questions": 15,
+    "chunks": 119,
+    "file_hit@5": 0.733,
+    "evidence_hit@5": 0.733,
+    "evidence_hit@1": 0.4,
+    "mrr": 0.55
+  },
+  "rows": [
+    {
+      "q": "How is a login password checked against the stored hash?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/security.py:1",
+        "README.md:2001",
+        "tests/test_auth.py:1",
+        "README.md:1051",
+        "README.md:2101"
+      ]
+    },
+    {
+      "q": "Which service method looks up a user by email address?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/services.py:201",
+        "README.md:2051",
+        "app/main.py:151",
+        "app/routers/auth.py:1",
+        "README.md:1251"
+      ]
+    },
+    {
+      "q": "What response does a client get when it sends too many requests?",
+      "file_rank": 3,
+      "evidence_rank": 4,
+      "retrieved": [
+        "tests/test_rate_limit.py:51",
+        "tests/test_rate_limit.py:1",
+        "app/main.py:151",
+        "app/main.py:51",
+        "README.md:2201"
+      ]
+    },
+    {
+      "q": "What runs when the application starts up and shuts down?",
+      "file_rank": 2,
+      "evidence_rank": 2,
+      "retrieved": [
+        ".github/workflows/ci.yml:1",
+        "app/main.py:51",
+        "README.md:2451",
+        "tests/test_app.py:1",
+        "app/main.py:1"
+      ]
+    },
+    {
+      "q": "Where is the logging format and level set up?",
+      "file_rank": null,
+      "evidence_rank": null,
+      "retrieved": [
+        ".env.example:1",
+        "alembic.ini:1",
+        "docker-compose.yml:1",
+        "README.md:51",
+        "conftest.py:1"
+      ]
+    },
+    {
+      "q": "Which endpoint deletes a category?",
+      "file_rank": 2,
+      "evidence_rank": 2,
+      "retrieved": [
+        "tests/test_categories_delete.py:1",
+        "app/routers/categories.py:51",
+        "README.md:1801",
+        "README.md:1751",
+        "tests/test_category_service.py:51"
+      ]
+    },
+    {
+      "q": "Which endpoint changes only some fields of an item?",
+      "file_rank": null,
+      "evidence_rank": null,
+      "retrieved": [
+        "README.md:1351",
+        "tests/conftest.py:101",
+        "tests/test_items_update.py:1",
+        "README.md:1401",
+        "README.md:1301"
+      ]
+    },
+    {
+      "q": "Where is the endpoint that tells you the service is running?",
+      "file_rank": 2,
+      "evidence_rank": 2,
+      "retrieved": [
+        "tests/test_app.py:1",
+        "app/routers/health.py:1",
+        ".github/workflows/ci.yml:1",
+        "README.md:2351",
+        "README.md:1251"
+      ]
+    },
+    {
+      "q": "Which endpoint returns the profile of the logged-in user?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/routers/auth.py:1",
+        "tests/test_app.py:1",
+        "tests/test_auth.py:1",
+        "app/main.py:151",
+        "app/routers/items.py:51"
+      ]
+    },
+    {
+      "q": "How is the item table defined with its price and category?",
+      "file_rank": null,
+      "evidence_rank": null,
+      "retrieved": [
+        "README.md:1851",
+        "alembic/versions/001_create_items_table.py:1",
+        "app/schemas.py:51",
+        "tests/test_item_service.py:51",
+        "app/schemas.py:101"
+      ]
+    },
+    {
+      "q": "Which schema describes the filters accepted when listing items?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/schemas.py:51",
+        "app/schemas.py:101",
+        "README.md:1351",
+        "README.md:1401",
+        "app/schemas.py:1"
+      ]
+    },
+    {
+      "q": "Which error is raised when someone registers with an email that is already used?",
+      "file_rank": 2,
+      "evidence_rank": 2,
+      "retrieved": [
+        "app/main.py:151",
+        "app/exceptions.py:1",
+        "README.md:2101",
+        "app/auth.py:1",
+        "README.md:2051"
+      ]
+    },
+    {
+      "q": "How are database migrations run when connected to the database?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "alembic/env.py:1",
+        "README.md:2301",
+        "app/database.py:1",
+        "conftest.py:1",
+        "README.md:2451"
+      ]
+    },
+    {
+      "q": "Which migration adds the users table?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "alembic/versions/003_add_users_table.py:1",
+        "alembic/env.py:1",
+        "README.md:1701",
+        "README.md:2351",
+        "README.md:51"
+      ]
+    },
+    {
+      "q": "How do the tests get an authorization header for a logged-in user?",
+      "file_rank": null,
+      "evidence_rank": null,
+      "retrieved": [
+        "tests/test_auth.py:1",
+        "README.md:2101",
+        "tests/test_app.py:1",
+        "app/routers/auth.py:1",
+        "tests/test_items_create.py:1"
+      ]
+    }
+  ]
+}

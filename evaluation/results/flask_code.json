@@ -1,0 +1,254 @@
+{
+  "summary": {
+    "chunker": "code",
+    "k": 5,
+    "questions": 20,
+    "chunks": 23,
+    "file_hit@5": 0.9,
+    "evidence_hit@5": 0.9,
+    "evidence_hit@1": 0.55,
+    "mrr": 0.681
+  },
+  "rows": [
+    {
+      "q": "Which route handles the contact form submission?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app.py:15",
+        "tests/test_app.py:29",
+        "templates/contact.html:1",
+        "tests/test_app.py:24",
+        "app.py:7"
+      ]
+    },
+    {
+      "q": "How does the app show a success message after the contact form is sent?",
+      "file_rank": 2,
+      "evidence_rank": 2,
+      "retrieved": [
+        "tests/test_app.py:29",
+        "app.py:15",
+        "tests/test_app.py:24",
+        "templates/contact.html:1",
+        "tests/test_app.py:14"
+      ]
+    },
+    {
+      "q": "Which host and port does the app listen on?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app.py:26",
+        "tests/test_app.py:14",
+        "tests/test_app.py:8",
+        "app.py:7",
+        "app.py:1"
+      ]
+    },
+    {
+      "q": "How is the secret key for sessions generated?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app.py:1",
+        "LICENSE:1",
+        "tests/test_app.py:19",
+        "README.md:51",
+        "tests/test_app.py:8"
+      ]
+    },
+    {
+      "q": "Where does the user go after the contact form is posted?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app.py:15",
+        "tests/test_app.py:29",
+        "templates/contact.html:1",
+        "tests/test_app.py:24",
+        "templates/index.html:1"
+      ]
+    },
+    {
+      "q": "How do the tests create a client for the Flask app?",
+      "file_rank": 1,
+      "evidence_rank": 4,
+      "retrieved": [
+        "tests/test_app.py:14",
+        "app.py:1",
+        "templates/index.html:1",
+        "tests/test_app.py:8",
+        "tests/test_app.py:29"
+      ]
+    },
+    {
+      "q": "Which test checks that sending the contact form works?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "tests/test_app.py:29",
+        "tests/test_app.py:24",
+        "app.py:15",
+        "tests/test_app.py:14",
+        "templates/contact.html:1"
+      ]
+    },
+    {
+      "q": "Which events trigger the CI workflow?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        ".github/workflows/ci.yml:1",
+        "README.md:51",
+        "README.md:1",
+        "tests/test_app.py:29",
+        "tests/test_app.py:8"
+      ]
+    },
+    {
+      "q": "How does the pipeline cache pip packages?",
+      "file_rank": 2,
+      "evidence_rank": 2,
+      "retrieved": [
+        "dockerfile:1",
+        ".github/workflows/ci.yml:1",
+        ".dockerignore:1",
+        "README.md:51",
+        "app.py:1"
+      ]
+    },
+    {
+      "q": "Which command runs the tests in CI?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        ".github/workflows/ci.yml:1",
+        "README.md:1",
+        "tests/test_app.py:8",
+        "tests/test_app.py:14",
+        "tests/test_app.py:24"
+      ]
+    },
+    {
+      "q": "How does the pipeline log in to Docker Hub?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        ".github/workflows/ci.yml:1",
+        "README.md:51",
+        "README.md:1",
+        "dockerfile:1",
+        ".dockerignore:1"
+      ]
+    },
+    {
+      "q": "How is the pushed Docker image tagged?",
+      "file_rank": 3,
+      "evidence_rank": 3,
+      "retrieved": [
+        "README.md:51",
+        "README.md:1",
+        ".github/workflows/ci.yml:1",
+        ".dockerignore:1",
+        "templates/base.html:1"
+      ]
+    },
+    {
+      "q": "Which job must finish before the image is built and pushed?",
+      "file_rank": 2,
+      "evidence_rank": 2,
+      "retrieved": [
+        "README.md:51",
+        ".github/workflows/ci.yml:1",
+        "app.py:11",
+        "app.py:7",
+        "static/css/style.css:1"
+      ]
+    },
+    {
+      "q": "Which base image does the container use?",
+      "file_rank": null,
+      "evidence_rank": null,
+      "retrieved": [
+        "README.md:51",
+        "templates/base.html:1",
+        "static/css/style.css:1",
+        "templates/index.html:1",
+        "templates/about.html:1"
+      ]
+    },
+    {
+      "q": "How does the Dockerfile keep the final image small?",
+      "file_rank": 3,
+      "evidence_rank": 3,
+      "retrieved": [
+        "README.md:51",
+        "README.md:1",
+        "dockerfile:1",
+        ".dockerignore:1",
+        ".github/workflows/ci.yml:1"
+      ]
+    },
+    {
+      "q": "Which port does the container expose?",
+      "file_rank": null,
+      "evidence_rank": null,
+      "retrieved": [
+        "README.md:51",
+        ".github/workflows/ci.yml:1",
+        "templates/base.html:1",
+        "README.md:1",
+        ".dockerignore:1"
+      ]
+    },
+    {
+      "q": "What command starts the app inside the container?",
+      "file_rank": 5,
+      "evidence_rank": 5,
+      "retrieved": [
+        ".github/workflows/ci.yml:1",
+        "README.md:51",
+        "README.md:1",
+        "app.py:26",
+        "dockerfile:1"
+      ]
+    },
+    {
+      "q": "What does the README say this project is for?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "README.md:1",
+        "README.md:51",
+        "tests/test_app.py:19",
+        "app.py:11",
+        "LICENSE:1"
+      ]
+    },
+    {
+      "q": "Which version of Werkzeug is pinned?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "requirements.txt:1",
+        "LICENSE:1",
+        "templates/about.html:1",
+        "templates/index.html:1",
+        "app.py:1"
+      ]
+    },
+    {
+      "q": "Which Python tools does the test file import to find the app module?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "tests/test_app.py:1",
+        "app.py:1",
+        "tests/test_app.py:14",
+        "tests/test_app.py:8",
+        "dockerfile:1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "summary": {
+    "chunker": "simple",
+    "k": 5,
+    "questions": 20,
+    "chunks": 8,
+    "file_hit@5": 1.0,
+    "evidence_hit@5": 0.95,
+    "evidence_hit@1": 0.5,
+    "mrr": 0.67
+  },
+  "rows": [
+    {
+      "q": "Which function counts total messages, words, media messages and links?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "helper.py:1",
+        "main.py:51",
+        "main.py:1",
+        "helper.py:51",
+        "main.py:101"
+      ]
+    },
+    {
+      "q": "How does the project find links shared in chat messages?",
+      "file_rank": 3,
+      "evidence_rank": 3,
+      "retrieved": [
+        "main.py:1",
+        "main.py:51",
+        "helper.py:1",
+        "helper.py:51",
+        "main.py:101"
+      ]
+    },
+    {
+      "q": "Which function finds the most active users and their percentage?",
+      "file_rank": 2,
+      "evidence_rank": 5,
+      "retrieved": [
+        "main.py:101",
+        "helper.py:101",
+        "main.py:51",
+        "helper.py:51",
+        "helper.py:1"
+      ]
+    },
+    {
+      "q": "How is the word cloud generated?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "helper.py:1",
+        "helper.py:51",
+        "main.py:101",
+        "main.py:51",
+        "main.py:1"
+      ]
+    },
+    {
+      "q": "Where are stop words loaded from?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "helper.py:1",
+        "helper.py:51",
+        "requirements.txt:1",
+        "main.py:1",
+        "main.py:101"
+      ]
+    },
+    {
+      "q": "How are the 20 most common words calculated?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "helper.py:51",
+        "helper.py:1",
+        "main.py:101",
+        "helper.py:101",
+        "main.py:51"
+      ]
+    },
+    {
+      "q": "How are emojis counted in messages?",
+      "file_rank": 1,
+      "evidence_rank": 3,
+      "retrieved": [
+        "helper.py:1",
+        "helper.py:101",
+        "helper.py:51",
+        "requirements.txt:1",
+        "main.py:1"
+      ]
+    },
+    {
+      "q": "How is the monthly timeline built?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "helper.py:101",
+        "main.py:1",
+        "main.py:51",
+        "preprocessor.py:1",
+        "helper.py:51"
+      ]
+    },
+    {
+      "q": "How is the daily timeline calculated?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "helper.py:101",
+        "main.py:51",
+        "main.py:1",
+        "preprocessor.py:1",
+        "helper.py:51"
+      ]
+    },
+    {
+      "q": "Which function counts messages per day of the week?",
+      "file_rank": 2,
+      "evidence_rank": 2,
+      "retrieved": [
+        "main.py:51",
+        "helper.py:101",
+        "main.py:1",
+        "helper.py:1",
+        "helper.py:51"
+      ]
+    },
+    {
+      "q": "Which function counts messages per month?",
+      "file_rank": 2,
+      "evidence_rank": 2,
+      "retrieved": [
+        "main.py:1",
+        "helper.py:101",
+        "main.py:51",
+        "helper.py:1",
+        "helper.py:51"
+      ]
+    },
+    {
+      "q": "How is the weekly activity heatmap data created?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "helper.py:101",
+        "main.py:51",
+        "main.py:1",
+        "helper.py:1",
+        "main.py:101"
+      ]
+    },
+    {
+      "q": "How does the app handle an uploaded zip file?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "main.py:1",
+        "preprocessor.py:1",
+        "requirements.txt:1",
+        "main.py:51",
+        "helper.py:1"
+      ]
+    },
+    {
+      "q": "Where is the dropdown of users created?",
+      "file_rank": 2,
+      "evidence_rank": null,
+      "retrieved": [
+        "helper.py:1",
+        "main.py:101",
+        "helper.py:51",
+        "helper.py:101",
+        "main.py:51"
+      ]
+    },
+    {
+      "q": "How is the Overall option added to the user list?",
+      "file_rank": 2,
+      "evidence_rank": 5,
+      "retrieved": [
+        "helper.py:51",
+        "main.py:101",
+        "helper.py:101",
+        "helper.py:1",
+        "main.py:1"
+      ]
+    },
+    {
+      "q": "Where are the top statistics shown to the user?",
+      "file_rank": 1,
+      "evidence_rank": 2,
+      "retrieved": [
+        "main.py:101",
+        "main.py:1",
+        "main.py:51",
+        "helper.py:1",
+        "helper.py:101"
+      ]
+    },
+    {
+      "q": "How is the emoji pie chart drawn?",
+      "file_rank": 3,
+      "evidence_rank": 3,
+      "retrieved": [
+        "helper.py:101",
+        "helper.py:1",
+        "main.py:101",
+        "requirements.txt:1",
+        "main.py:1"
+      ]
+    },
+    {
+      "q": "Where is the word cloud displayed?",
+      "file_rank": 2,
+      "evidence_rank": 2,
+      "retrieved": [
+        "helper.py:1",
+        "main.py:101",
+        "main.py:51",
+        "main.py:1",
+        "requirements.txt:1"
+      ]
+    },
+    {
+      "q": "Which function turns the raw chat text into a dataframe?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "preprocessor.py:1",
+        "main.py:1",
+        "helper.py:1",
+        "helper.py:51",
+        "main.py:51"
+      ]
+    },
+    {
+      "q": "Which libraries does the project need to install?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "requirements.txt:1",
+        "main.py:1",
+        "main.py:51",
+        "helper.py:51",
+        "helper.py:1"
+      ]
+    }
+  ]
+}

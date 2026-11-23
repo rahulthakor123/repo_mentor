@@ -1,0 +1,25 @@
+{
+  "repo": "Isrealade__flaskapp-devops-ci-cd",
+  "questions": [
+    {"q": "Which route handles the contact form submission?", "file": "app.py", "evidence": "def contact"},
+    {"q": "How does the app show a success message after the contact form is sent?", "file": "app.py", "evidence": "flash('Thank you"},
+    {"q": "Which host and port does the app listen on?", "file": "app.py", "evidence": "port=5000"},
+    {"q": "How is the secret key for sessions generated?", "file": "app.py", "evidence": "os.urandom(24)"},
+    {"q": "Where does the user go after the contact form is posted?", "file": "app.py", "evidence": "redirect(url_for('contact'))"},
+    {"q": "How do the tests create a client for the Flask app?", "file": "tests/test_app.py", "evidence": "app.test_client()"},
+    {"q": "Which test checks that sending the contact form works?", "file": "tests/test_app.py", "evidence": "def test_contact_form_submission"},
+    {"q": "Which events trigger the CI workflow?", "file": ".github/workflows/ci.yml", "evidence": "workflow_dispatch"},
+    {"q": "How does the pipeline cache pip packages?", "file": ".github/workflows/ci.yml", "evidence": "actions/cache@v3"},
+    {"q": "Which command runs the tests in CI?", "file": ".github/workflows/ci.yml", "evidence": "run: pytest"},
+    {"q": "How does the pipeline log in to Docker Hub?", "file": ".github/workflows/ci.yml", "evidence": "docker/login-action@v3"},
+    {"q": "How is the pushed Docker image tagged?", "file": ".github/workflows/ci.yml", "evidence": "github.sha"},
+    {"q": "Which job must finish before the image is built and pushed?", "file": ".github/workflows/ci.yml", "evidence": "needs: test"},
+    {"q": "Which base image does the container use?", "file": "dockerfile", "evidence": "FROM python:3.13-slim"},
+    {"q": "How does the Dockerfile keep the final image small?", "file": "dockerfile", "evidence": "COPY --from=builder /install /install"},
+    {"q": "Which port does the container expose?", "file": "dockerfile", "evidence": "EXPOSE 5000"},
+    {"q": "What command starts the app inside the container?", "file": "dockerfile", "evidence": "CMD [\"python\", \"app.py\"]"},
+    {"q": "What does the README say this project is for?", "file": "README.md", "evidence": "DevOps learning project"},
+    {"q": "Which version of Werkzeug is pinned?", "file": "requirements.txt", "evidence": "Werkzeug==2.2.3"},
+    {"q": "Which Python tools does the test file import to find the app module?", "file": "tests/test_app.py", "evidence": "sys.path.insert"}
+  ]
+}

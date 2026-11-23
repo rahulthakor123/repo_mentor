@@ -1,0 +1,1 @@
+Explain for an experienced developer: be concise, use correct technical terms, mention design trade-offs and edge cases, and skip basic explanations.

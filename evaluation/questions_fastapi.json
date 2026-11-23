@@ -1,0 +1,25 @@
+{
+  "repo": "iammikek__fastAPI-101",
+  "questions": [
+    {"q": "How does the app hash a user's password?", "file": "app/security.py", "evidence": "def hash_password"},
+    {"q": "Where is the JWT access token created?", "file": "app/security.py", "evidence": "def create_access_token"},
+    {"q": "How is a JWT token decoded and validated?", "file": "app/security.py", "evidence": "def decode_access_token"},
+    {"q": "How does the app find the currently logged-in user from the request token?", "file": "app/auth.py", "evidence": "def get_current_user"},
+    {"q": "Which endpoint registers a new user?", "file": "app/routers/auth.py", "evidence": "def register"},
+    {"q": "Which endpoint logs a user in and returns a token?", "file": "app/routers/auth.py", "evidence": "def login"},
+    {"q": "How does the items endpoint handle filtering and pagination?", "file": "app/routers/items.py", "evidence": "def list_items"},
+    {"q": "Which endpoint returns summary statistics for items?", "file": "app/routers/items.py", "evidence": "def get_items_stats"},
+    {"q": "How are the item statistics calculated per category?", "file": "app/services.py", "evidence": "def get_stats"},
+    {"q": "Where is the check that a category name is not already taken?", "file": "app/services.py", "evidence": "def _ensure_unique_name"},
+    {"q": "Which error is raised when you delete a category that still has items?", "file": "app/exceptions.py", "evidence": "class CategoryInUseError"},
+    {"q": "How is a missing item turned into an HTTP error response?", "file": "app/main.py", "evidence": "def item_not_found_handler"},
+    {"q": "How are database errors handled for the whole app?", "file": "app/main.py", "evidence": "def database_error_handler"},
+    {"q": "Where are incoming HTTP requests logged?", "file": "app/main.py", "evidence": "def log_requests"},
+    {"q": "Which function runs the database migrations when the app starts?", "file": "app/main.py", "evidence": "def run_migrations"},
+    {"q": "How are the app settings loaded and cached?", "file": "app/config.py", "evidence": "def get_settings"},
+    {"q": "How does an endpoint get a database session?", "file": "app/database.py", "evidence": "def get_db"},
+    {"q": "How is the price field converted when it is sent in a response?", "file": "app/schemas.py", "evidence": "def serialize_price"},
+    {"q": "How is the users database table defined?", "file": "app/models.py", "evidence": "class User"},
+    {"q": "Which test checks that logging in too many times is blocked?", "file": "tests/test_rate_limit.py", "evidence": "def test_login_rate_limit_exceeded"}
+  ]
+}

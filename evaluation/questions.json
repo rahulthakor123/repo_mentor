@@ -1,0 +1,25 @@
+{
+  "repo": "rahulthakor123__whatsApp_chat_analysis",
+  "questions": [
+    {"q": "Which function counts total messages, words, media messages and links?", "file": "helper.py", "evidence": "def fetch_stats"},
+    {"q": "How does the project find links shared in chat messages?", "file": "helper.py", "evidence": "extract.find_urls"},
+    {"q": "Which function finds the most active users and their percentage?", "file": "helper.py", "evidence": "def most_busy_users"},
+    {"q": "How is the word cloud generated?", "file": "helper.py", "evidence": "def create_word_cloud"},
+    {"q": "Where are stop words loaded from?", "file": "helper.py", "evidence": "stop_hinglish.txt"},
+    {"q": "How are the 20 most common words calculated?", "file": "helper.py", "evidence": "most_common(20)"},
+    {"q": "How are emojis counted in messages?", "file": "helper.py", "evidence": "emoji.EMOJI_DATA"},
+    {"q": "How is the monthly timeline built?", "file": "helper.py", "evidence": "def monthly_timeline"},
+    {"q": "How is the daily timeline calculated?", "file": "helper.py", "evidence": "def daily_timeline"},
+    {"q": "Which function counts messages per day of the week?", "file": "helper.py", "evidence": "def week_activity_map"},
+    {"q": "Which function counts messages per month?", "file": "helper.py", "evidence": "def month_activity_map"},
+    {"q": "How is the weekly activity heatmap data created?", "file": "helper.py", "evidence": "def activity_heatmap"},
+    {"q": "How does the app handle an uploaded zip file?", "file": "main.py", "evidence": "zipfile.ZipFile"},
+    {"q": "Where is the dropdown of users created?", "file": "main.py", "evidence": "selectbox"},
+    {"q": "How is the Overall option added to the user list?", "file": "main.py", "evidence": "user_list.insert(0"},
+    {"q": "Where are the top statistics shown to the user?", "file": "main.py", "evidence": "Top Statistics"},
+    {"q": "How is the emoji pie chart drawn?", "file": "main.py", "evidence": "px.pie"},
+    {"q": "Where is the word cloud displayed?", "file": "main.py", "evidence": "ax.imshow(df_wc)"},
+    {"q": "Which function turns the raw chat text into a dataframe?", "file": "preprocessor.py", "evidence": "def preprocess"},
+    {"q": "Which libraries does the project need to install?", "file": "requirements.txt", "evidence": "streamlit"}
+  ]
+}

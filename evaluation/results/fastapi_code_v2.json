@@ -1,0 +1,254 @@
+{
+  "summary": {
+    "chunker": "code",
+    "k": 5,
+    "questions": 20,
+    "chunks": 261,
+    "file_hit@5": 0.9,
+    "evidence_hit@5": 0.9,
+    "evidence_hit@1": 0.7,
+    "mrr": 0.779
+  },
+  "rows": [
+    {
+      "q": "How does the app hash a user's password?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/security.py:13",
+        "app/models.py:37",
+        "app/security.py:18",
+        "tests/test_auth.py:4",
+        "app/services.py:229"
+      ]
+    },
+    {
+      "q": "Where is the JWT access token created?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/security.py:23",
+        "app/security.py:31",
+        "tests/conftest.py:72",
+        "app/routers/auth.py:26",
+        "app/security.py:1"
+      ]
+    },
+    {
+      "q": "How is a JWT token decoded and validated?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/security.py:31",
+        "tests/test_items_delete.py:19",
+        "app/security.py:23",
+        "tests/conftest.py:72",
+        "tests/test_items_delete.py:4"
+      ]
+    },
+    {
+      "q": "How does the app find the currently logged-in user from the request token?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/auth.py:18",
+        "app/routers/auth.py:26",
+        "app/routers/auth.py:48",
+        "tests/test_auth.py:57",
+        "app/main.py:149"
+      ]
+    },
+    {
+      "q": "Which endpoint registers a new user?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/routers/auth.py:18",
+        "tests/conftest.py:61",
+        "tests/test_auth.py:4",
+        "app/services.py:229",
+        "app/schemas.py:124"
+      ]
+    },
+    {
+      "q": "Which endpoint logs a user in and returns a token?",
+      "file_rank": 2,
+      "evidence_rank": 2,
+      "retrieved": [
+        "tests/test_auth.py:27",
+        "app/routers/auth.py:26",
+        "tests/test_auth.py:57",
+        "tests/conftest.py:72",
+        "app/auth.py:18"
+      ]
+    },
+    {
+      "q": "How does the items endpoint handle filtering and pagination?",
+      "file_rank": 3,
+      "evidence_rank": 3,
+      "retrieved": [
+        "app/services.py:115",
+        "app/services.py:100",
+        "app/routers/items.py:28",
+        "tests/test_items_list.py:13",
+        "app/schemas.py:106"
+      ]
+    },
+    {
+      "q": "Which endpoint returns summary statistics for items?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/routers/items.py:54",
+        "tests/test_items_stats.py:18",
+        "tests/test_items_stats.py:34",
+        "tests/test_items_stats.py:4",
+        "app/schemas.py:82"
+      ]
+    },
+    {
+      "q": "How are the item statistics calculated per category?",
+      "file_rank": null,
+      "evidence_rank": null,
+      "retrieved": [
+        "tests/test_item_service.py:61",
+        "app/schemas.py:69",
+        "tests/test_items_stats.py:34",
+        "README.md:1851",
+        "tests/test_item_service.py:92"
+      ]
+    },
+    {
+      "q": "Where is the check that a category name is not already taken?",
+      "file_rank": null,
+      "evidence_rank": null,
+      "retrieved": [
+        "app/exceptions.py:28",
+        "app/main.py:138",
+        "tests/test_categories_create.py:18",
+        "app/exceptions.py:12",
+        "tests/test_categories_create.py:24"
+      ]
+    },
+    {
+      "q": "Which error is raised when you delete a category that still has items?",
+      "file_rank": 2,
+      "evidence_rank": 2,
+      "retrieved": [
+        "tests/test_category_service.py:72",
+        "app/exceptions.py:20",
+        "tests/test_category_service.py:64",
+        "tests/test_categories_delete.py:12",
+        "app/routers/categories.py:70"
+      ]
+    },
+    {
+      "q": "How is a missing item turned into an HTTP error response?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/main.py:111",
+        "tests/test_items_create.py:19",
+        "tests/test_items_create.py:55",
+        "tests/test_items_read.py:11",
+        "tests/test_items_update.py:51"
+      ]
+    },
+    {
+      "q": "How are database errors handled for the whole app?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/main.py:160",
+        "app/services.py:1",
+        "app/services.py:223",
+        "app/main.py:127",
+        "app/main.py:1"
+      ]
+    },
+    {
+      "q": "Where are incoming HTTP requests logged?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/main.py:95",
+        "app/routers/health.py:19",
+        "app/routers/health.py:1",
+        "app/routers/auth.py:26",
+        "tests/conftest.py:61"
+      ]
+    },
+    {
+      "q": "Which function runs the database migrations when the app starts?",
+      "file_rank": 4,
+      "evidence_rank": 4,
+      "retrieved": [
+        "alembic/env.py:23",
+        "alembic/env.py:37",
+        "tests/conftest.py:33",
+        "app/main.py:47",
+        "app/main.py:56"
+      ]
+    },
+    {
+      "q": "How are the app settings loaded and cached?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/config.py:31",
+        "app/config.py:1",
+        "app/config.py:11",
+        ".github/actions/setup/action.yml:1",
+        "app/main.py:1"
+      ]
+    },
+    {
+      "q": "How does an endpoint get a database session?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/database.py:20",
+        "tests/conftest.py:116",
+        "app/database.py:1",
+        "app/services.py:223",
+        "app/routers/health.py:19"
+      ]
+    },
+    {
+      "q": "How is the price field converted when it is sent in a response?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/schemas.py:52",
+        "app/schemas.py:82",
+        "README.md:1501",
+        "README.md:1851",
+        "app/schemas.py:1"
+      ]
+    },
+    {
+      "q": "How is the users database table defined?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "app/models.py:37",
+        "alembic/versions/003_add_users_table.py:21",
+        "alembic/versions/003_add_users_table.py:1",
+        "app/schemas.py:124",
+        "alembic/versions/003_add_users_table.py:33"
+      ]
+    },
+    {
+      "q": "Which test checks that logging in too many times is blocked?",
+      "file_rank": 1,
+      "evidence_rank": 1,
+      "retrieved": [
+        "tests/test_rate_limit.py:20",
+        "tests/test_rate_limit.py:37",
+        "tests/test_rate_limit.py:54",
+        "tests/test_auth.py:40",
+        "tests/test_auth.py:27"
+      ]
+    }
+  ]
+}
