@@ -1,4 +1,4 @@
-from sympy import re
+import re
 
 from repo_mentor.features.base import Feature, load_prompt
 from repo_mentor.features.registry import register
