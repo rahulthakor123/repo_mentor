@@ -20,6 +20,7 @@ testpaths = ["tests"]
 [project.optional-dependencies]
 api = ["fastapi", "uvicorn"]
 claude = ["anthropic"]
+dev = ["pytest"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
