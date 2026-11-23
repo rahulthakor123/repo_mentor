@@ -14,6 +14,9 @@ dependencies = [
   "streamlit",
 ]
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
 [project.optional-dependencies]
 api = ["fastapi", "uvicorn"]
 claude = ["anthropic"]
